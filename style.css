@@ -1,0 +1,88 @@
+body {
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+    background-color: #f0f4f5; /* Lighter and cooler background color */
+    color: #5b5555;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #2f2f2f; /* Darker color for headings */
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5b5555; /* Match link color with text color */
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+
+section {
+    padding: 50px;
+}
+
+.intro {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.contact-info {
+    margin-top: 50px;
+    font-family: 'Avenir Next LT Pro Light', sans-serif;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e5e5e5;
+    color: #5b5555;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Image Styling */
+.profile-img {
+    width: 250px;
+    height: 500px;
+    border-radius: 0;
+    margin-left: 20px;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Research and Teaching Section Listings */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    margin: 10px 
