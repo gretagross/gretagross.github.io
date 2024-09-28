@@ -8,14 +8,14 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Regular+400:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir+Next:wght@300&display=swap" rel="stylesheet">
 
     <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Avenir Next LT Pro Light', Arial, sans-serif;
-            background-color: #E8EAEF; /* Lighter cooler grey */
-            color: #333; /* Dark grey */
+            background-color: #d0d4d8; /* Cooler grey */
+            color: #333; /* Very dark grey */
             margin: 0;
             padding: 0;
         }
@@ -64,17 +64,15 @@
         }
         /* Image Styling */
         .profile-img {
-            width: 200px; /* Adjust for width */
-            height: 300px; /* Increased height for more vertical emphasis */
+            width: 250px; /* Set to quadrangular format */
+            height: 250px; /* Set to quadrangular format */
             border-radius: 0; /* No rounded corners */
             margin-left: 20px;
-            box-shadow: none; /* No shadow effect */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
         }
-        /* Layout for the home section */
-        .home-container {
+        .hero-text {
             display: flex;
-            align-items: center; /* Center align vertically */
-            margin-top: 20px; /* Add margin for spacing */
+            align-items: center;
         }
         /* Italic text for project descriptions */
         .project-description {
@@ -95,24 +93,26 @@
 
     <!-- Header Section with Navigation -->
     <header>
-        <h1>GRETA FREDERIKE GROß</h1>
         <nav>
             <a href="#home">HOME</a> <!-- Changed to all caps -->
-            <a href="#research">RESEARCH</a>
-            <a href="#teaching">TEACHING</a>
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
             <a href="#cv">CV</a>
         </nav>
     </header>
 
+    <div class="hero-text">
+        <h1 style="margin-right: 20px;">GRETA FREDERIKE GROß</h1>
+        <img src="images/Gross_Katy-Otto-SCRIPTS-2021-Cropped_bearbeitet.jpg" alt="Greta Frederike Groß" class="profile-img">
+    </div>
+
     <!-- Home Section -->
     <section id="home">
-        <div class="home-container">
-            <h2 style="text-transform: uppercase;">HOME</h2>
-            <img src="images/Gross_Katy-Otto-SCRIPTS-2021-Cropped_bearbeitet.jpg" alt="Greta Frederike Groß" class="profile-img">
-        </div>
+        <h2>Home</h2>
+        <h1 style="font-size: 3em;">GRETA FREDERIKE GROß</h1>
         <p class="intro">
             Thanks for your visit!<br><br>
-            I’m a political psychologist, working at the intersection of political communication, NLP, and psychology.<br><br>
+            I’m a political psychologist, working at the intersection of political communication, NLP and psychology.<br><br>
             In my work, I explore narratives of political leaders with a specific focus on crisis moments and I examine their persuasive effect on citizens. I apply methods of quantitative text analysis as well as visual conjoint survey designs.<br><br>
             In my recent projects, I also investigate the applicability of LLMs in social science research.<br><br>
             I’m a final year PhD researcher at the Hertie School and the SCRIPTS Cluster of Excellence. During my PhD, I was a visiting researcher at the European University Institute.<br><br>
