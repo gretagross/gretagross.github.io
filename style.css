@@ -77,10 +77,17 @@ ul {
     padding: 0;
 }
 
-li {
+li.a {
     margin-bottom: 20px;
-    font-size: 2.1em;
+    font-size: 1.7em;
     font-weight: bold;
+    text-align: center;
+}
+
+li.b {
+    margin-bottom: 80px;
+    font-size: 1.1em;
+    font-weight: italic;
     text-align: center;
 }
 
