@@ -14,7 +14,7 @@
     <style>
         body {
             font-family: 'Avenir Next LT Pro Light', Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #d0d4d8; /* Cooler grey */
             color: #333; /* Very dark grey */
             margin: 0;
             padding: 0;
@@ -64,23 +64,28 @@
         }
         /* Image Styling */
         .profile-img {
-            max-width: 250px; /* Increased size */
-            border-radius: 50%; /* Optional round profile */
+            width: 250px; /* Set to quadrangular format */
+            height: 250px; /* Set to quadrangular format */
+            border-radius: 0; /* No rounded corners */
             margin-left: 20px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
         }
         .hero-text {
             display: flex;
             align-items: center;
-            background-color: transparent; /* No white background */
         }
-        /* Added blur effect for image blending */
-        .profile-img {
-            filter: blur(3px);
-            transition: filter 0.3s ease;
+        /* Italic text for project descriptions */
+        .project-description {
+            font-style: italic;
+            line-height: 1.2; /* Closer line spacing */
+            font-size: 0.9em; /* Smaller size */
         }
-        .profile-img:hover {
-            filter: none; /* Clear blur on hover */
+        /* Increased font size for subpages */
+        section h2 {
+            font-size: 1.5em; /* Increase size */
+        }
+        section p {
+            font-size: 1.1em; /* Increase size */
         }
     </style>
 </head>
@@ -88,10 +93,6 @@
 
     <!-- Header Section with Navigation -->
     <header>
-        <div class="hero-text">
-            <h1 style="margin-right: 20px;">GRETA FREDERIKE GROß</h1>
-            <img src="images/Gross_Katy-Otto-SCRIPTS-2021-Cropped_bearbeitet.jpg" alt="Greta Frederike Groß" class="profile-img">
-        </div>
         <nav>
             <a href="#home">HOME</a> <!-- Changed to all caps -->
             <a href="#research">Research</a>
@@ -99,6 +100,11 @@
             <a href="#cv">CV</a>
         </nav>
     </header>
+
+    <div class="hero-text">
+        <h1 style="margin-right: 20px;">GRETA FREDERIKE GROß</h1>
+        <img src="images/Gross_Katy-Otto-SCRIPTS-2021-Cropped_bearbeitet.jpg" alt="Greta Frederike Groß" class="profile-img">
+    </div>
 
     <!-- Home Section -->
     <section id="home">
@@ -130,39 +136,44 @@
     <section id="research">
         <h2>Research</h2>
         <ul>
-            <strong>“We’re all in this together”</strong> – understanding moral narratives from prime ministers Boris Johnson and Jacinda Ardern during COVID-19
-            <p>Work in progress. Draft available upon request.</p><p></p>
+            <li><strong>“We’re all in this together”</strong> – understanding moral narratives from prime ministers Boris Johnson and Jacinda Ardern during COVID-19
+                <p class="project-description">Work in progress. Draft available upon request.</p>
+            </li>
 
-            <strong>(No) Ideas for tomorrow?</strong> – Exploring communicated future visions in German politics during crises and beyond
-            <p>Work in progress. Draft available upon request.</p><p></p>
+            <li><strong>(No) Ideas for tomorrow?</strong> – Exploring communicated future visions in German politics during crises and beyond
+                <p class="project-description">Work in progress. Draft available upon request.</p>
+            </li>
 
-            <strong>Say it in their words:</strong> overcoming political divisions through moral reframing
-            <p>Work in progress. Draft available upon request. Preprint <a href="#">here</a>.</p><p></p>
+            <li><strong>Say it in their words:</strong> overcoming political divisions through moral reframing
+                <p class="project-description">Work in progress. Draft available upon request. Preprint <a href="#">here</a>.</p>
+            </li>
 
-            <strong>I vs. Us Perceptions Explain Us vs. Them Politics:</strong> Egotropic and Sociotropic Motivations for Radical Right Support (with Luca Versteegen and Lilliana Mason)
-            <p>Work in progress.</p><p></p>
+            <li><strong>I vs. Us Perceptions Explain Us vs. Them Politics:</strong> Egotropic and Sociotropic Motivations for Radical Right Support (with Luca Versteegen and Lilliana Mason)
+                <p class="project-description">Work in progress.</p>
+            </li>
 
-            <strong>Attributing Blame in Times of Austerity:</strong> A Cross-National Computational Study of Finance Ministers' Budget Speeches (with Olga Gasparyan, Slava Jankin & Mark Hallerberg)
-            <p>Work in progress.</p><p></p>
+            <li><strong>Attributing Blame in Times of Austerity:</strong> A Cross-National Computational Study of Finance Ministers' Budget Speeches (with Olga Gasparyan, Slava Jankin & Mark Hallerberg)
+                <p class="project-description">Work in progress.</p>
+            </li>
         </ul>
     </section>
 
     <!-- Teaching Section -->
     <section id="teaching">
         <h2>Teaching</h2>
-        <ul><p></p>
-            <strong>“Working with LLMs in Social Science”</strong> 
-            <p>Workshop for BA Interns at the City, University London, summer 2024</p>
-            <p></p>
-            <strong>“Moral psychology”</strong> 
-            <p>guest lecture in the “Psychology for policy analysis and implementation” course at the Hertie School, fall 2023 and spring 2024</p>
-            <p></p>
-            <strong>Teaching group workout classes</strong> 
-            <p>as a fitness coach, fall 2022 – spring 203</p>
-            <p></p>
-            <p></p>
-            <strong>Certificate:</strong> 
-            <p>“Introduction to teaching in higher education” at the Hertie School</p>
+        <ul>
+            <li><strong>“Working with LLMs in Social Science”</strong> Workshop for BA Interns at the City, University London, summer 2024
+                <p class="project-description">Upcoming workshop.</p>
+            </li>
+            <li><strong>“Moral psychology”</strong> guest lecture in the “Psychology for policy analysis and implementation” course at the Hertie School, fall 2023 and spring 2024
+                <p class="project-description">Engaging lecture planned.</p>
+            </li>
+            <li><strong>Teaching group workout classes</strong> as a fitness coach, fall 2022 – spring 203
+                <p class="project-description">Fitness coaching experience.</p>
+            </li>
+            <li><strong>Certificate:</strong> “Introduction to teaching in higher education” at the Hertie School
+                <p class="project-description">Certification achieved.</p>
+            </li>
         </ul>
     </section>
 
