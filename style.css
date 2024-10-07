@@ -1,16 +1,13 @@
+/* Global Styles */
 body {
-    font-family: 'Avenir Next LT Pro Light', sans-serif;
-    background-color: #f0f4f5; /* Lighter and cooler background color */
-    color: #5b5555;
+    font-family: 'Libre Baskerville', serif; /* Use Libre Baskerville throughout */
+    background-color: #f0f4f3; /* Lighter cooler background */
+    color: #3e3e3e; /* Dark grey for text */
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
-    font-family: 'Libre Baskerville', serif;
-    color: #2f2f2f; /* Darker color for headings */
-}
-
+/* Header Styles */
 header {
     padding: 20px;
     display: flex;
@@ -18,6 +15,7 @@ header {
     align-items: center;
 }
 
+/* Navigation Styles */
 nav {
     margin-top: 20px;
 }
@@ -25,71 +23,52 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #5b5555; /* Match link color with text color */
+    color: #3e3e3e; /* Match the color to the rest of the text */
     font-weight: bold;
-    font-family: 'Libre Baskerville', serif;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Padding */
 section {
     padding: 50px;
 }
 
-.intro {
-    font-size: 1.2em;
-    line-height: 1.5;
-}
-
-.contact-info {
-    margin-top: 50px;
-    font-family: 'Avenir Next LT Pro Light', sans-serif;
-    font-size: 1.1em;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #e5e5e5;
-    color: #5b5555;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
 /* Image Styling */
 .profile-img {
-    width: 250px;
-    height: 500px;
+    width: 250px; /* Adjust image size */
+    height: 380px; /* Keep height bigger than width */
     border-radius: 0;
     margin-left: 20px;
 }
 
-.hero-text {
-    display: flex;
-    align-items: center;
+/* Content Styles */
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #3e3e3e;
 }
 
-/* Style for Research and Teaching Section Listings */
+/* Increased line spacing for research and teaching listings */
 ul {
-    list-style: none;
+    list-style-type: none; /* Remove bullet points */
     padding: 0;
 }
 
-li.a {
-    margin-bottom: 20px;
-    font-size: 1.7em;
-    font-weight: bold;
-    text-align: center;
-}
-
-li.b {
-    margin-bottom: 80px;
-    font-size: 1.1em;
-    font-weight: italic;
-    text-align: center;
+li {
+    margin-bottom: 30px; /* More space between listings */
 }
 
 p {
-    margin: 10px 
+    font-size: 1em;
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2ebdb;
+    color: rgb(51, 88, 56);
+}
