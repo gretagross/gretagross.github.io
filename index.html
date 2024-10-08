@@ -12,12 +12,15 @@
 
     <!-- Custom Styles -->
     <style>
+        /* Global Styles */
         body {
             font-family: 'Libre Baskerville', serif;
             background-color: #f0f4f5;
             color: #5b5555;
             margin: 0;
             padding: 0;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
         header {
@@ -34,32 +37,38 @@
             font-weight: bold;
         }
 
+        /* Content Section */
         section {
-            padding: 10px; /* Reduced padding for the section */
+            padding: 20px;
         }
 
         .content-wrapper {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* Allow items to wrap if needed */
             align-items: flex-start;
-            justify-content: flex-start; /* Align everything to the left */
-            gap: 20px; /* Space between profile section and intro text */
+            gap: 15px; /* Reduced gap between image and text */
+            justify-content: flex-start; /* Align content to the left */
         }
 
         .profile-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 25%; /* Ensure profile section takes 35% width of the page */
+            width: 22%; /* Reduced width of the profile section */
+            min-width: 200px; /* Ensure a reasonable size on small screens */
         }
 
+        /* Responsive Image */
         .profile-img {
-            width: 250px;
-            height: auto; /* Maintain the rectangular shape */
-            border-radius: 0; /* No border radius for a rectangular image */
+            width: 100%;
+            max-width: 230px; /* Adjusted max size */
+            height: auto;
+            border: 1px solid #ccc; /* Optional: Add a border to better visualize the image */
         }
 
         .profile-info {
-            margin-top: 20px;
+            margin-top: 15px;
             text-align: center;
         }
 
@@ -77,27 +86,19 @@
         }
 
         .profile-info a {
-            color: #1e90ff; /* Link color */
+            color: #1e90ff;
             text-decoration: none;
         }
 
         .profile-info a:hover {
-            text-decoration: underline; /* Underline on hover */
+            text-decoration: underline;
         }
 
-        .intro-text {
-            font-size: 1.1em; /* Default text size */
-            line-height: 1.6;
-            max-width: 62%; /* Limit the width of the introductory text */
+        /* Social Icons */
+        .social-icons {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .intro-text .intro-heading {
-            font-size: 1.3em; /* Larger text size for "Thanks for your visit!" */
-            font-weight: bold;
-            margin: 0 0 10px; /* Space below the heading */
+            justify-content: center;
+            margin-top: 10px;
         }
 
         .social-icons img {
@@ -106,11 +107,101 @@
             margin-right: 10px;
         }
 
+        /* Introductory Text Section */
+        .intro-text {
+            font-size: 1.1em;
+            max-width: 72%; /* Increased text section width */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .intro-text .intro-heading {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .intro-text p {
+            margin: 10px 0;
+        }
+
+        .intro-text a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        .intro-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #e5e5e5;
             color: #5b5555;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            /* Adjust profile and intro layout for smaller screens */
+            .content-wrapper {
+                flex-direction: column; /* Stack profile and text vertically */
+                align-items: center;
+            }
+
+            .profile-section {
+                width: 100%; /* Take up full width on smaller screens */
+                max-width: 300px;
+            }
+
+            .intro-text {
+                max-width: 100%; /* Full width for intro text */
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro-text {
+                font-size: 1rem;
+            }
+
+            .profile-info h1 {
+                font-size: 1.6em;
+            }
+
+            .profile-info h2 {
+                font-size: 1.1em;
+            }
+
+            .intro-text .intro-heading {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-section {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .intro-text {
+                font-size: 0.95em;
+            }
+
+            .profile-info h1 {
+                font-size: 1.4em;
+            }
+
+            .profile-info h2 {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -132,6 +223,7 @@
     <section class="content-wrapper">
         <!-- Profile Section: Image and Name Info on the Left -->
         <div class="profile-section">
+            <!-- Ensure correct image path -->
             <img src="images/Gross_Katy-Otto-SCRIPTS-2021-Cropped_bearbeitet.jpg" alt="Greta Frederike Groß" class="profile-img">
 
             <!-- Profile info below the image -->
@@ -145,21 +237,18 @@
                     <img src="images/email-icon.png" alt="Email Icon">
                     <img src="images/github-icon.png" alt="GitHub Icon">
                     <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
-                    <!-- Add actual links later -->
                 </div>
             </div>
         </div>
 
         <!-- Introductory Text next to the Profile Section -->
         <div class="intro-text">
-                <p class="intro-heading">Thanks for your visit!</p><br>
-                <p>I’m a political psychologist, working at the intersection of political communication, NLP, and psychology.<br><br>
-                    In my work, I explore narratives of political leaders with a specific focus on crisis moments, and I examine their persuasive effect on citizens. I apply methods of quantitative text analysis as well as visual conjoint survey designs.<br>
-                    In my recent projects, I also investigate the applicability of LLMs in social science research.<br><br>
-                    I’m a final year PhD researcher at the Hertie School and the SCRIPTS Cluster of Excellence. During my PhD, I was a visiting researcher at the European University Institute.<br><br>
-                    Please reach out via <a href="mailto:g.gross@phd.hertie-school.org">g.gross@phd.hertie-school.org</a><br>
-                    I'm always happy to receive feedback, questions or (even better) cooperations!
-                </p>
+            <p class="intro-heading">Thanks for your visit!</p>
+            <p>I’m a political psychologist, working at the intersection of political communication, NLP, and psychology.</p>
+            <p>In my work, I explore narratives of political leaders with a specific focus on crisis moments, and I examine their persuasive effect on citizens. I apply methods of quantitative text analysis as well as visual conjoint survey designs.</p>
+            <p>In my recent projects, I also investigate the applicability of LLMs in social science research.</p>
+            <p>I’m a final year PhD researcher at the Hertie School and the SCRIPTS Cluster of Excellence. During my PhD, I was a visiting researcher at the European University Institute.</p>
+            <p>Please reach out via <a href="mailto:g.gross@phd.hertie-school.org">g.gross@phd.hertie-school.org</a><br> I'm always happy to receive feedback, questions or (even better) cooperations!</p>
         </div>
     </section>
 
