@@ -10,13 +10,14 @@
 
     <!-- Custom Styles -->
     <style>
-        body {
-            font-family: 'Libre Baskerville', serif;
-            background-color: #f0f4f5;
-            color: #5b5555;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        font-family: 'Libre Baskerville', serif;
+        background-color: #f0f4f5;
+        color: #5b5555;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem; /* Ensure text scales properly */
+    }
 
         header {
             padding: 20px;
@@ -31,28 +32,45 @@
             color: #5b5555;
             font-weight: bold;
         }
-
-        section {
-            padding: 40px 20px;
-        }
-
+        
         h2 {
             font-size: 1.8em;
             font-weight: bold;
             text-align: center;
             margin: 40px 0 10px;
         }
-
-        /* Single thinner line below subheadings */
+        
         h2::after {
             content: "";
             display: block;
             width: 50%;
-            height: 0.5px; /* Thinner line */
+            height: 1px;
             background-color: #5b5555;
             margin: 10px auto 0;
         }
-
+        
+        section {
+            padding: 40px 20px;
+        }
+        /* Responsive Lists */
+        ul {
+            width: 75%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        p {
+            font-size: 1rem; /* Adjusted to ensure readability */
+            line-height: 1.6em;
+            margin-top: 10px;
+        }
+        
         .teaching-list {
             list-style: none;
             padding: 0;
@@ -60,7 +78,7 @@
             text-align: center;
             /* width: 75%; /* Limit the width of the list to 75% */
         }
-
+        
         .teaching-list li {
             margin-bottom: 5px;
             font-size: 1.2em;
@@ -77,15 +95,48 @@
             font-style: italic;
             margin-top: 15px;
             font-size: 0.9em;
-            line-height: 0.7em;
+            line-height: 1.1em;
         }
-
+        /* Responsive Footer */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #e5e5e5;
             color: #5b5555;
             margin-top: 40px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.6em; /* Slightly smaller on tablet */
+            }
+
+            ul {
+                width: 90%; /* More space for content on smaller screens */
+            }
+
+            li {
+                font-size: 1.1em; /* Text slightly smaller on mobile */
+            }
+
+            p {
+                font-size: 0.9em; /* Adjusted for mobile readability */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.4em; /* Further adjust headers for small screens */
+            }
+
+            p {
+                font-size: 0.85em;
+            }
+
+            ul {
+                width: 100%; /* Full-width on mobile */
+            }
         }
     </style>
 </head>
@@ -110,18 +161,18 @@
         <ul class="teaching-list">
             <li>“Working with LLMs in Social Science”</li>
             <li.a>- Workshop for BA Interns at the City, University London, summer 2024 -</li.a>
-            <p>Exploring the application of large language models in social science research through interactive workshops.</p>
+            <p>Exploring the application of large language models in social science research.</p>
             <br><br>
             <li>“Moral psychology”</li> 
             <li.a>- Guest lecture in the “Psychology for policy analysis and implementation” course at the Hertie School, fall 2023 & spring 2024 -</li.a>
             <p>Introducing students to the foundational concepts of moral psychology and its applications in policy analysis.</p>
             <br><br>
-            <li>Teaching group workout classes</li> 
+            <li>Group workout classes</li> 
             <li.a>- Fitness coach, fall 2022 - spring 2023 -</li.a>
-            <p>Led fitness workout sessions, focusing on bodyweight exercises and high-intensity interval training.</p>
+            <p>Leading group training sessions.</p>
             <br><br>
             <li>Certificate: “Introduction to teaching in higher education” at the Hertie School</li>
-            <p>Completed formal training on teaching methodologies and best practices in higher education.</p>
+            <p>Formal training on teaching methodologies and best practices in higher education.</p>
         </ul>
     </section>
 

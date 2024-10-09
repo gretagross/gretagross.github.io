@@ -8,97 +8,149 @@
     <title>Research - Greta Frederike Groß</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Custom Styles -->
-    <style>
-        body {
-            font-family: 'Libre Baskerville', serif;
-            background-color: #f0f4f5;
-            color: #5b5555;
-            margin: 0;
-            padding: 0;
-        }
+        <!-- Custom Styles -->
+        <style>
+            body {
+                font-family: 'Libre Baskerville', serif;
+                background-color: #f0f4f5;
+                color: #5b5555;
+                margin: 0;
+                padding: 0;
+                font-size: 1rem; /* Ensure text scales properly */
+            }
+        
+                header {
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+        
+                nav a {
+                    margin: 0 15px;
+                    text-decoration: none;
+                    color: #5b5555;
+                    font-weight: bold;
+                }
+                
+                h2 {
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 40px 0 10px;
+                }
+                
+                h2::after {
+                    content: "";
+                    display: block;
+                    width: 50%;
+                    height: 1px;
+                    background-color: #5b5555;
+                    margin: 10px auto 0;
+                }
+                
+                section {
+                    padding: 40px 20px;
+                }
+                /* Responsive Lists */
+                ul {
+                    width: 75%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                
+                li {
+                    margin-bottom: 15px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+                
+                p {
+                    font-size: 1rem; /* Adjusted to ensure readability */
+                    line-height: 1.6em;
+                    margin-top: 10px;
+                }
+                
+                .research-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 75%; /* Limit the width of the research list to 75% */
+                }
 
-        header {
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+                .research-list li {
+                    margin-bottom: 15px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #5b5555;
-            font-weight: bold;
-        }
+                .research-list p {
+                    font-style: italic;
+                    margin-top: 5px;
+                    font-size: 0.9em;
+                    line-height: 1.1em;
+                }
 
-        section {
-            padding: 40px 20px;
-        }
+                .press-list {
+                    text-align: center;
+                    margin: 20px 0;
+                }
 
-        h2 {
-            font-size: 1.8em;
-            font-weight: bold;
-            text-align: center;
-            margin: 40px 0 10px;
-        }
+                .press-list a {
+                    font-size: 1.2em;
+                    text-decoration: none;
+                    color: #1e90ff;
+                    font-weight: bold;
+                }
 
-        /* Single thinner line below subheadings */
-        h2::after {
-            content: "";
-            display: block;
-            width: 50%;
-            height: 0.5px; /* Thinner line */
-            background-color: #5b5555;
-            margin: 10px auto 0;
-        }
+                .press-list a:hover {
+                    text-decoration: underline;
+                }
+                /* Responsive Footer */
+                footer {
+                    text-align: center;
+                    padding: 20px;
+                    background-color: #e5e5e5;
+                    color: #5b5555;
+                    margin-top: 40px;
+                }
+        
+                /* Responsive Adjustments */
+                @media (max-width: 768px) {
+                    h2 {
+                        font-size: 1.6em; /* Slightly smaller on tablet */
+                    }
+        
+                    ul {
+                        width: 90%; /* More space for content on smaller screens */
+                    }
+        
+                    li {
+                        font-size: 1.1em; /* Text slightly smaller on mobile */
+                    }
+        
+                    p {
+                        font-size: 0.9em; /* Adjusted for mobile readability */
+                    }
+                }
+        
+                @media (max-width: 480px) {
+                    h2 {
+                        font-size: 1.4em; /* Further adjust headers for small screens */
+                    }
+        
+                    p {
+                        font-size: 0.85em;
+                    }
+        
+                    ul {
+                        width: 100%; /* Full-width on mobile */
+                    }
+                }
+            </style>
+        </head>
 
-        .research-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 auto;
-            text-align: center;
-            width: 75%; /* Limit the width of the research list to 75% */
-        }
-
-        .research-list li {
-            margin-bottom: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .research-list p {
-            font-style: italic;
-            margin-top: 5px;
-            font-size: 0.9em;
-            line-height: 0.7em;
-        }
-
-        .press-list {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .press-list a {
-            font-size: 1.2em;
-            text-decoration: none;
-            color: #1e90ff;
-            font-weight: bold;
-        }
-
-        .press-list a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #e5e5e5;
-            color: #5b5555;
-            margin-top: 40px;
-        }
-    </style>
-</head>
 
 <body>
 
@@ -126,7 +178,7 @@
             <p>Draft available upon request.</p>
             <br><br>
             <li>Say it in their words: overcoming political divisions through moral reframing</li>
-            <p>Draft available upon request. Preprint <a href="#">here</a>.</p>
+            <p>Draft available upon request. Preregistration <a href="#">here</a>.</p>
             <br><br>
             <li>I vs. Us Perceptions Explain Us vs. Them Politics: Egotropic and Sociotropic Motivations for Radical Right Support</li>
             <p>(with Luca Versteegen and Lilliana Mason)</p>
